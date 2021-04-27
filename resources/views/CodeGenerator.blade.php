@@ -8,9 +8,7 @@
 <body>
     <div class="container mx-auto">
         <h1>SC code generator</h1>
-        @foreach($SC_code as $code)
-            <li class="list-group-item"><h5>{{ $code }}</h5></li>
-        @endforeach
+        <p> Your SC code is {{$SC_code}} </p>
     </div>
 </body>
 </html>

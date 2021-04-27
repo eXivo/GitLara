@@ -15,7 +15,8 @@
     </div>
 
     <div>
-        <p> Your new SC code is {{$SC_code}}</p>
+
+        <p> Your new SC code is ...</p>
 
     </div>
 </body>

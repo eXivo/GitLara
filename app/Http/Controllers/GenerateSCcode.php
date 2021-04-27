@@ -16,15 +16,12 @@ class GenerateSCcode extends Controller
 
         $SC_code = $this->getCode($packageID);;
 
-//        $this->loadView($SC_code);
 
-        $this->loadView($SC_code);
 
-        function loadView($SC_code) {
-            return view('CodeForm', [
-                'SC_code' => $SC_code
-            ]);
-        }
+        return view('CodeGenerator', [
+            'SC_code' => $SC_code
+        ]);
+
     }
 
     public function getCode($packageID){
