@@ -16,14 +16,13 @@ use App\Http\Controllers\GenerateSCcode;
 //
 
 
-Route::get('/', function () {
-    return view('CodeForm');
-});
+Route::get('/', [\App\Http\Controllers\GenerateSCcodeController::class, 'index'])->name('generator');
+Route::get('/generator', [\App\Http\Controllers\GenerateSCcodeController::class, 'index'])->name('generator.index');
+Route::post('/generator', [\App\Http\Controllers\GenerateSCcodeController::class, 'store'])->name('generator.store');
+Route::get('/generator/show', [\App\Http\Controllers\GenerateSCcodeController::class, 'show'])->name('generator.show');
 
 
 
-
-Route::post('/generator', [GenerateSCcode::class,'ReceiveDataForm'])->name('CodeForm.submit');
 
 
 
