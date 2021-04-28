@@ -20,9 +20,9 @@
     <div class="container">
         <form method="POST" action="{{route('CodeForm.submit')}}" class="bg-blue text-center w-1/3 px-3 py-4 text-black mx-auto rounded">
             @csrf
-            <input type="text" name="productID" placeholder="Product ID" class="block w-full mx-auto text-sm py-2 px-3 rounded border-black" />
+            <input type="text" name="productID" placeholder="Product ID" class="block w-full mx-auto text-sm py-2 px-3 rounded border-2 border-black" />
 {{--            <div class="block w-full mx-auto text-sm py-2 px-3 rounded my-3">  </div>--}}
-            <button type="submit" class="bg-blue text-black font-bold py-2 px-4 rounded border block mx-auto w-full">
+            <button type="submit" class="bg-blue text-black font-bold py-2 px-4 rounded border-2 border-black block mx-auto w-full mt-4">
                 Submit
             </button>
         </form>
