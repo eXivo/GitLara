@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Symfony\Component\Console\Input\Input;
+
 
 class GenerateSCcode extends Controller
 {
@@ -47,12 +47,5 @@ class GenerateSCcode extends Controller
 
     }
 
-    function loadView($SC_code){
-//        return view("CodeForm", [
-//            'SC_code' => $SC_code
-//            ]);
 
-//        return view('CodeForm', compact('SC_code'));
-        return view('CodeForm');
-    }
 }

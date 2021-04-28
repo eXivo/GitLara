@@ -19,34 +19,11 @@ use App\Http\Controllers\GenerateSCcode;
 Route::get('/', function () {
     return view('CodeForm');
 });
-//Route::post('/generator', function () {
-//    return view('CodeForm');
-//});
-
-
-
-Route::post('/generator', [GenerateSCcode::class,'ReceiveDataForm']);
 
 
 
 
-////Route::get('/' , [GenerateSCcode::class , 'generateCodes']);
-//
-//Route::get('/CodeGenerator' , 'GenerateSCcode@ReceiveDataForm');
-//
-//
-////TEST
-//
-//Route::get('/CodeGenerator', function (Request $request){
-//    //
-//});
+Route::post('/generator', [GenerateSCcode::class,'ReceiveDataForm'])->name('CodeForm.submit');
 
 
 
-
-
-//Route::get('test', function(){
-//    return view('test', [
-//        'testVariable' => 'testString'
-//    ]);
-//});
