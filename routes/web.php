@@ -23,6 +23,3 @@ Route::get('/generator/show', [\App\Http\Controllers\GenerateSCcodeController::c
 
 
 
-
-
-

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-211.7036.8">
+  <component name="dataSourceStorageLocal">
     <data-source name="MariaDB - spay@localhost" uuid="a90a858a-5275-4bc2-bbfd-1b89ad2e9dc1">
       <database-info product="MariaDB" version="10.4.18-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.6.0" dbms="MARIADB" exact-version="10.4.18" exact-driver-version="2.6">
         <extra-name-characters>#@</extra-name-characters>
@@ -9,7 +9,6 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-mapping />
     </data-source>
   </component>
 </project>

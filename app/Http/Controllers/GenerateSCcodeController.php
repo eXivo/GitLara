@@ -50,24 +50,20 @@ class GenerateSCcodeController extends Controller
      */
     private function getCode(string $packageID) : string
     {
-
-
-        //Code variables
-
+        // Code variables
+        // ID from Package
         $ID = substr($packageID, 2); //last 2 digits of package ID
 
-//        $date = '';
+        // Date created
         $date = date('mY');
+        $date = substr($date, 0, 2) . substr($date, -2, 2); //date of creation mmYY
 
-        $dateMMYY = substr($date, 0, 2) . substr($date, -2, 2); //date of creation mmYY
-
+        // 4 random digits
         $randDigits = rand(1000, 9999); //4 random digits
 
 
-        //Create the code
-
-        return $ID . $dateMMYY . $randDigits;
-
+        // Concat string to code
+        return $ID . $date . $randDigits;
     }
 
 
